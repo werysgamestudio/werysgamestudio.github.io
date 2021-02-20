@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="tailwind.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-black bg-opacity-90">
+
+		<div class="p-4">
+			<div class="font-extrabold tracking-widest text-xl"><a href="#" class="transition duration-500 hover:text-red-500">Werys Game Studio</a></div>
+		</div>
+
+		<!-- Nav Items Working on Tablet & Bigger Sceen -->
+		<div class="p-4 hidden md:flex flex-row justify-between font-bold">
+			<a id="hide-after-click" href="#" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-red-500 transition duration-500">Home</a>
+			<a href="#racemenow" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-red-500 transition duration-500">Race me now</a>
+			<!-- <a href="#contact" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-red-500 transition duration-500">Contact</a> -->
+		</div>
+
+		<!-- Burger Nav Button on Mobile -->
+		<div id="nav-open" class="p-4 md:hidden">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+			 stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
+		</div>
+	</nav>
+
+	<!-- Opened Nav in Mobile, you can use javascript/jQuery -->
+	<div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
+		<div class="p-2 flex flex-col">
+      <a href="#" class="p-2 font-semibold hover:text-red-700">Home</a>
+			<a href="#racemenow" class="p-2 font-semibold hover:text-red-700">Race me now</a>
+			<!-- <a href="#contact" class="p-2 font-semibold hover:text-red-700">Contact</a> -->
+		</div>
+	</div>
+
+  <style>
+      .active{
+          display: block;
+      }
+  </style>
+
+  <script>
+      let hamburger = document.getElementById('nav-open');
+      let mobileMenu = document.getElementById('nav-opened');
+      hamburger.addEventListener('click', function(){
+          mobileMenu.classList.toggle('active');
+      });
+  </script>
+
+	<header id="up" class="h-screen">
+    <div style="background-image: url('./images/background.png')" class="h-screen bg-center bg-cover">
+		<!-- Overlay Background + Center Control -->
+		<div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.1);">
+			<div class="mx-2 text-center">
+        <div class="py-5">
+				<h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
+					Werys Game Studio
+        </h1>
+        </div>
+        <h2 class="text-black font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">
+          Fun making games
+        </h2>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- screenshots -->
+  <section id="racemenow"class="container mx-auto px-6 p-20">
+  <h1 class="text-6xl font-bold text-center text-gray-800 mb-8">
+    Race me now
+  </h1>
+  <h2 class="text-3xl font-bold text-center text-gray-400 mb-8">
+    Simple and fun racing game available soon
+  </h2>
+
+  <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+  	<div class="sm:w-full md:w-full lg:w-4/5 xl:w-3/5 m-3 rounded shadow-lg overflow-hidden">
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">Race fast</div>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Several fun race tracks available</div>
+  		<img src="images/race1.gif">
+  	</div>
+    <div class="sm:w-full md:w-full lg:w-4/5 xl:w-3/5 m-3 rounded shadow-lg overflow-hidden">
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">Race with friends</div>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Split screen racing available</div>
+      <img src="images/background2.png">
+    </div>
+    <div class="sm:w-full md:w-full lg:w-4/5 xl:w-3/5 m-3 rounded shadow-lg overflow-hidden">
+      <div class="text-center font-bold text-xl m-1 px-2 py-2">Unlock more cars</div>
+      <div class="text-center m-1 px-3 py-2 text-gray-500">Master driving all available cars</div>
+      <img src="images/background3.png">
+    </div>
+  </div>
+
+  <div class="py-10"></div>
+  <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">
+    Follow the development of <span class="text-gray-500">Race me now</span> on social media
+  </h3>
+  <!-- <h4 class="text-xl text-center text-gray-800 mb-8"> -->
+    <div class="flex flex-wrap my-2 py-2 text-center items-center justify-center">
+    <!-- <a class="bg-red-500  hover:bg-opacity-50 flex my-2 items-center justify-center h-24 w-24 mx-1 rounded-full fab fill-current text-white text-6xl fa fa-envelope" href="mailto:layal@layalliverpool.com"></a> -->
+    <a class="bg-red-500 hover:bg-opacity-50 flex my-2 items-center justify-center h-24 w-24 mx-1 rounded-full fab fill-current text-white text-5xl fa fa-reddit" href="https://www.reddit.com/user/werysgamestudio"></a>
+    <a class="bg-blue-400 hover:bg-opacity-50 flex my-2 items-center justify-center h-24 w-24 mx-1 rounded-full fab fill-current text-white text-5xl fa fa-twitter" href="https://twitter.com/WerysGameStudio"></a>
+    <a class="bg-pink-500 hover:bg-opacity-50 flex my-2 items-center justify-center h-24 w-24 mx-1 rounded-full fab fill-current text-white text-5xl fa fa-instagram" href="https://www.instagram.com/werysgamestudio"></a>
+    <a class="bg-blue-800 hover:bg-opacity-50 flex my-2 items-center justify-center h-24 w-24 mx-1 rounded-full fab fill-current text-white text-5xl fa fa-facebook" href="https://www.facebook.com/Werys-Game-Studio-115219287272191"></a>
+    </div>
+  <!-- </h4> -->
+
+  </section>
+
+<!-- Impressum -->
+<div class="py-20"></div>
+<section id="impressum"class="container mx-auto px-6 p-10">
+<h2 class="text-xl font-extrabold text-center text-gray-400 mb-2">
+  Impressum
+</h2>
+</section>
+<div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+  <div class="sm:w-full md:w-4/5 lg:w-1/2 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+    <div class="text-left text-xs m-1 px-3 py-2 font-small text-gray-300">
+According to § 5 TMG<br/><br/>
+
+Responsible for the content according to § 55 Abs. 2 RStV:<br/>
+Konrad Werys<br/>
+<!-- Stierstraße 1<br/> -->
+12159 Berlin<br/>
+<!-- konradwerys2@gmail.com<br/><br/> -->
+
+Disclaimer:<br/><br/>
+
+Liability for content<br/>
+The contents of our pages were created with great care. However, we cannot guarantee that the content is correct, complete and up to date. As a service provider, we are responsible for our own content on these pages in accordance with Section 7 (1) of the German Telemedia Act. According to §§ 8 to 10 TMG, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the time we become aware of a specific legal violation.<br/><br/>
+
+Liability for links<br/>
+Our website contains links to external third-party websites, the content of which we have no influence on. For this reason, we cannot accept any liability for this external content. The respective provider or operator is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time the link was created. No illegal content was discernible at the time the link was created. A permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. As soon as we become aware of legal violations, we will remove such links immediately.<br/><br/>
+
+Copyright<br/>
+The content and works on these pages created by the site operator are subject to German copyright law. The duplication, processing, distribution and any kind of use beyond the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this page are only permitted for private, non-commercial use. As far as the content on this page was not created by the operator, the copyrights of third parties are respected. In particular contents of third parties are marked as such. Should you nevertheless become aware of a copyright infringement, please let us know. As soon as we become aware of legal violations, we will remove such content immediately.<br/><br/>
+
+Privacy<br/>
+Our website can generally be used without providing personal data. Insofar as personal data (e.g. name, address or email address) is collected on our website, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.<br/>
+We would like to point out that data transmission over the Internet (e.g. when communicating by email) can have security gaps. It is not possible to completely protect data from third-party access.<br/>
+We hereby expressly object to the use by third parties of contact data published within the scope of the imprint obligation for sending unsolicited advertising and information material. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam e-mails.<br/><br/>
+
+Website imprint from impressum-generator.de (translated from German to English with Google Translate)
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
