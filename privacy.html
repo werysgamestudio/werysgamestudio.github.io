@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://werysgamestudio.github.io" />
+  <meta property="og:title" content="Werys Game Studio" />
+  <meta property="og:description" content="Developing games for fun, currently working on Race Me Now." />
+  <meta property="og:image" content="https://werysgamestudio.github.io/images/background_og.png" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Werys Game Studio" />
+  <meta property="twitter:description" content="Developing games for fun, currently working on Race Me Now." />
+  <meta property="twitter:image" content="https://werysgamestudio.github.io/images/background_og.png" />
+  <meta property="twitter:site" content="https://twitter.com/werysgamestudio" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="tailwind.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://werysgamestudio.github.io/images/icon.ico">
+  <title>Werys Game Studio</title>
+</head>
+
+<body>
+  <nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-black bg-opacity-90">
+
+		<div class="p-4">
+			<div class="font-extrabold tracking-widest text-xl"><a href="#" class="transition duration-500 hover:text-red-500">Werys Game Studio</a></div>
+		</div>
+
+		<!-- Nav Items Working on Tablet & Bigger Sceen -->
+    <div class="p-4 hidden md:flex flex-row justify-between font-bold">
+			<a id="hide-after-click" href="index.html#" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-red-500 transition duration-500">Home</a>
+      <a id="hide-after-click" href="privacy.html" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-red-500 transition duration-500">Privacy policy</a>
+			<a href="index.html#racemenow" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-red-500 transition duration-500">Race me now</a>
+			<!-- <a href="#contact" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-red-500 transition duration-500">Contact</a> -->
+		</div>
+
+		<!-- Burger Nav Button on Mobile -->
+		<div id="nav-open" class="p-4 md:hidden">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+			 stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
+		</div>
+	</nav>
+
+	<!-- Opened Nav in Mobile, you can use javascript/jQuery -->
+  <div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
+		<div class="p-2 flex flex-col">
+      <a href="index.html#" class="p-2 font-semibold hover:text-red-700">Home</a>
+      <a href="privacy.html" class="p-2 font-semibold hover:text-red-700">Privacy policy</a>
+			<a href="index.html#racemenow" class="p-2 font-semibold hover:text-red-700">Race me now</a>
+			<!-- <a href="#contact" class="p-2 font-semibold hover:text-red-700">Contact</a> -->
+		</div>
+	</div>
+
+  <style>
+      .active{
+          display: block;
+      }
+  </style>
+
+  <script>
+      let hamburger = document.getElementById('nav-open');
+      let mobileMenu = document.getElementById('nav-opened');
+      hamburger.addEventListener('click', function(){
+          mobileMenu.classList.toggle('active');
+      });
+  </script>
+
+<div class="py-10"></div>
+
+  <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full">
+    <div class="w-4/5 m-3 rounded shadow-lg overflow-hidden">
+      <div class="text-left text-xs m-3 px-5 py-4 font-small text-gray-400">
+
+
+  <h1 class="font-bold text-4xl py-4">Company information</h1>
+  <p class="font-bold text-xl">Werys Ltd</p>
+  <p>27 Old Gloucester Street, London, United Kingdom, WC1N 3AX</p>
+  <p>Company number 13914276</p>
+  <p>Contact: info@werys.co</p>
+
+  <h1 class="font-bold text-4xl py-4">Privacy Policy for Werys Ltd</h1>
+
+  <p class="py-2">At Werys Game Studio, accessible from werys.co, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Werys Game Studio and how we use it.</p>
+
+  <p class="py-2">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. Our Privacy Policy was generated with the help of <a href="https://www.gdprprivacynotice.com/">GDPR Privacy Policy Generator from GDPRPrivacyNotice.com</a></p>
+
+  <h2 class="font-bold text-2xl py-2">General Data Protection Regulation (GDPR)</h2>
+  <p class="py-2">We are a Data Controller of your information.</p>
+
+  <p class="py-2">Werys Ltd legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Information we collect and the specific context in which we collect the information:</p>
+  <ul class="list-disc px-8">
+      <li>Werys Ltd needs to perform a contract with you</li>
+      <li>You have given Werys Ltd permission to do so</li>
+      <li>Processing your personal information is in Werys Ltd legitimate interests</li>
+      <li>Werys Ltd needs to comply with the law</li>
+  </ul>
+
+  <p class="py-2">Werys Ltd will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies.</p>
+
+  <p class="py-2">If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you wish to be informed what Personal Information we hold about you and if you want it to be removed from our systems, please contact us.</p>
+  <p class="py-2">In certain circumstances, you have the following data protection rights:</p>
+  <ul class="list-disc px-8">
+      <li>The right to access, update or to delete the information we have on you.</li>
+      <li>The right of rectification.</li>
+      <li>The right to object.</li>
+      <li>The right of restriction.</li>
+      <li>The right to data portability</li>
+      <li>The right to withdraw consent</li>
+  </ul>
+
+  <h2 class="font-bold text-2xl py-2">Log Files</h2>
+
+  <p class="py-2">Werys Game Studio follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+
+  <h2 class="font-bold text-2xl py-2">Privacy Policies</h2>
+
+  <p class="py-2">You may consult this list to find the Privacy Policy for each of the advertising partners of Werys Game Studio.</p>
+
+  <p class="py-2">Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Werys Game Studio, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+
+  <p class="py-2">Note that Werys Game Studio has no access to or control over these cookies that are used by third-party advertisers.</p>
+
+  <h2 class="font-bold text-2xl py-2">Third Party Privacy Policies</h2>
+
+  <p class="py-2">Werys Game Studio's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+
+  <p class="py-2">You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+
+  <h2 class="font-bold text-2xl py-2">Children's Information</h2>
+
+  <p class="py-2">Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+  <p class="py-2">Werys Game Studio does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+
+  <h2 class="font-bold text-2xl py-2">Online Privacy Policy Only</h2>
+
+  <p class="py-2">Our Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Werys Game Studio. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+
+  <h2 class="font-bold text-2xl py-2">Consent</h2>
+
+  <p class="py-2">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+</div>
+</div>
+</div>
+</body>
+</html>
